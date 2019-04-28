@@ -53,16 +53,21 @@
 <!-- Section: Content -->
 <div class="container">
     <div class="row">
-        <div class="col-lg-7 col-md-12">
+        <div class="col-lg-7 cold-md-12">
             <!-- Left Side Box -->
-            <div class="box" style="padding-bottom: 5px;">
-            <h3 class="title">Humidity Level</h3>
-            <hr>
-            <img src="Resources/assets/images/Fig2.png" alt="Humidity Graph">
-            <p>The plot above demonstrates that Latitude plays a role in the level of humidty observed on 01/05/2017 
-                as it can be seen that higher levels of Humidity can be observed at and surrounding the equator 
-                while as you get further north of the equator lower levels of humidity are being observed.
-            </p>
+            <div class="box">
+                <h3 class="h3">Summary: Latitude vs. X</h3>
+                <hr>
+                <img src="Resources/assets/images/Fig1.png" class="vizualization rounded float-left" alt="Max Temperature(°F) Graph">
+                <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To
+                    accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over
+                    500 cities.
+                </p>
+                <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.
+                    Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the
+                    source data and visualizations created as part of the analysis, as well as explanations and descriptions of
+                    any trends and correlations witnessed.
+                </p>
             </div>
         </div>
         <div class="col-lg-5 col-md-12">
@@ -72,32 +77,32 @@
                 <hr>
                 <div class="container">
                     
-                        <div class="row" style="padding-bottom: 30px;">
-                            <div class="col-6">
-                                <a href="maxTemp.html">
-                                    <img class="panel" src="Resources/assets/images/Fig1.png" alt="maxTemp Graph">
-                                </a>
-                            </div>
-                            <div class="col-6">
-                                <a href="humidity.html">
-                                    <img class="panel" src="Resources/assets/images/Fig2.png" alt="Humidity Graph">
-                                </a>
-                            </div>
+                    <div class="row" style="padding-bottom: 30px;">
+                        <div class="col-6">
+                            <a href="maxTemp.html">
+                                <img class="panel" src="Resources/assets/images/Fig1.png" alt="maxTemp Graph">
+                            </a>
                         </div>
-                        
-                        <div class="row" style="padding-bottom: 30px;">
-                            <div class="col-6">
-                                <a href="cloudiness.html">
-                                    <img class="panel" src="Resources/assets/images/Fig3.png" alt="Cloudiness Graph">
-                                </a>
-                            </div>
-                            <div class="col-6">
-                                <a href="windSpeed.html">
-                                    <img class="panel" src="Resources/assets/images/Fig4.png" alt="windSpeed Graph">
-                                </a>
-                            </div>
+                        <div class="col-6">
+                            <a href="humidity.html">
+                                <img class="panel" src="Resources/assets/images/Fig2.png" alt="Humidity Graph">
+                            </a>
                         </div>
-                    </div>                
+                    </div>
+                    
+                    <div class="row" style="padding-bottom: 30px;">
+                        <div class="col-6">
+                            <a href="cloudiness.html">
+                                <img class="panel" src="Resources/assets/images/Fig3.png" alt="Cloudiness Graph">
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <a href="windSpeed.html">
+                                <img class="panel" src="Resources/assets/images/Fig4.png" alt="windSpeed Graph">
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -107,5 +112,6 @@
     <footer>
         <div class="footer">2019 RutgersCodingBootcamp - Mike Ingram</div>
     </footer>
-    </body>
+
+</body>
 </html>
